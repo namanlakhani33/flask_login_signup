@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+        {% block content %}
+        {% endblock %}
+        <script src="" async defer></script>
+    </body>
+</html>
